@@ -1,0 +1,1322 @@
+{
+  "processing_summary": {
+    "total_records_processed": 10000,
+    "total_processing_time": 0.33,
+    "average_throughput": 30303.03,
+    "total_batches": 100,
+    "successful_batches": 100,
+    "failed_batches": 0
+  },
+  "performance_metrics": {
+    "elapsed_time": 0.21,
+    "processed_records": 10000,
+    "error_count": 0,
+    "batch_count": 100,
+    "throughput": 47244.96,
+    "memory_usage": 50.0,
+    "cpu_usage": 25.0,
+    "errors_percentage": 0.0
+  },
+  "batch_results": [
+    {
+      "batch_id": "1-6",
+      "records_processed": 100,
+      "processing_time": 0.003,
+      "throughput": 33378.2,
+      "data": null,
+      "summary": {
+        "total_amount": 143032.93247399997,
+        "avg_amount": 1430.3293247399997,
+        "unique_customers": 95,
+        "unique_products": 93
+      }
+    },
+    {
+      "batch_id": "1-1",
+      "records_processed": 100,
+      "processing_time": 0.002,
+      "throughput": 42577.44,
+      "data": null,
+      "summary": {
+        "total_amount": 132447.61167150002,
+        "avg_amount": 1324.4761167150002,
+        "unique_customers": 95,
+        "unique_products": 92
+      }
+    },
+    {
+      "batch_id": "1-2",
+      "records_processed": 100,
+      "processing_time": 0.002,
+      "throughput": 61890.28,
+      "data": null,
+      "summary": {
+        "total_amount": 132626.3699895,
+        "avg_amount": 1326.263699895,
+        "unique_customers": 96,
+        "unique_products": 90
+      }
+    },
+    {
+      "batch_id": "1-0",
+      "records_processed": 100,
+      "processing_time": 0.006,
+      "throughput": 18102.3,
+      "data": null,
+      "summary": {
+        "total_amount": 127111.55994450001,
+        "avg_amount": 1271.115599445,
+        "unique_customers": 95,
+        "unique_products": 87
+      }
+    },
+    {
+      "batch_id": "1-5",
+      "records_processed": 100,
+      "processing_time": 0.002,
+      "throughput": 62930.29,
+      "data": null,
+      "summary": {
+        "total_amount": 131503.3533285,
+        "avg_amount": 1315.033533285,
+        "unique_customers": 96,
+        "unique_products": 89
+      }
+    },
+    {
+      "batch_id": "1-7",
+      "records_processed": 100,
+      "processing_time": 0.002,
+      "throughput": 48970.27,
+      "data": null,
+      "summary": {
+        "total_amount": 131909.99266649995,
+        "avg_amount": 1319.0999266649994,
+        "unique_customers": 96,
+        "unique_products": 95
+      }
+    },
+    {
+      "batch_id": "1-3",
+      "records_processed": 100,
+      "processing_time": 0.002,
+      "throughput": 49979.79,
+      "data": null,
+      "summary": {
+        "total_amount": 131778.74790749996,
+        "avg_amount": 1317.7874790749995,
+        "unique_customers": 96,
+        "unique_products": 91
+      }
+    },
+    {
+      "batch_id": "1-4",
+      "records_processed": 100,
+      "processing_time": 0.007,
+      "throughput": 14503.63,
+      "data": null,
+      "summary": {
+        "total_amount": 118622.3822145,
+        "avg_amount": 1186.223822145,
+        "unique_customers": 95,
+        "unique_products": 87
+      }
+    },
+    {
+      "batch_id": "1-9",
+      "records_processed": 100,
+      "processing_time": 0.002,
+      "throughput": 44094.87,
+      "data": null,
+      "summary": {
+        "total_amount": 119113.22695800001,
+        "avg_amount": 1191.1322695800002,
+        "unique_customers": 96,
+        "unique_products": 89
+      }
+    },
+    {
+      "batch_id": "1-8",
+      "records_processed": 100,
+      "processing_time": 0.004,
+      "throughput": 25069.06,
+      "data": null,
+      "summary": {
+        "total_amount": 139901.76376200002,
+        "avg_amount": 1399.0176376200002,
+        "unique_customers": 96,
+        "unique_products": 97
+      }
+    },
+    {
+      "batch_id": "2-1",
+      "records_processed": 100,
+      "processing_time": 0.002,
+      "throughput": 61545.18,
+      "data": null,
+      "summary": {
+        "total_amount": 136919.063157,
+        "avg_amount": 1369.19063157,
+        "unique_customers": 96,
+        "unique_products": 94
+      }
+    },
+    {
+      "batch_id": "2-3",
+      "records_processed": 100,
+      "processing_time": 0.004,
+      "throughput": 27397.64,
+      "data": null,
+      "summary": {
+        "total_amount": 126595.0594965,
+        "avg_amount": 1265.9505949650002,
+        "unique_customers": 96,
+        "unique_products": 91
+      }
+    },
+    {
+      "batch_id": "2-0",
+      "records_processed": 100,
+      "processing_time": 0.009,
+      "throughput": 10552.77,
+      "data": null,
+      "summary": {
+        "total_amount": 131460.0774645,
+        "avg_amount": 1314.600774645,
+        "unique_customers": 95,
+        "unique_products": 92
+      }
+    },
+    {
+      "batch_id": "2-2",
+      "records_processed": 100,
+      "processing_time": 0.002,
+      "throughput": 58383.96,
+      "data": null,
+      "summary": {
+        "total_amount": 131833.82418900004,
+        "avg_amount": 1318.3382418900003,
+        "unique_customers": 95,
+        "unique_products": 94
+      }
+    },
+    {
+      "batch_id": "2-4",
+      "records_processed": 100,
+      "processing_time": 0.002,
+      "throughput": 55370.35,
+      "data": null,
+      "summary": {
+        "total_amount": 123257.50080000002,
+        "avg_amount": 1232.5750080000003,
+        "unique_customers": 99,
+        "unique_products": 88
+      }
+    },
+    {
+      "batch_id": "2-6",
+      "records_processed": 100,
+      "processing_time": 0.002,
+      "throughput": 56817.99,
+      "data": null,
+      "summary": {
+        "total_amount": 125197.7997435,
+        "avg_amount": 1251.977997435,
+        "unique_customers": 96,
+        "unique_products": 90
+      }
+    },
+    {
+      "batch_id": "2-7",
+      "records_processed": 100,
+      "processing_time": 0.002,
+      "throughput": 62073.46,
+      "data": null,
+      "summary": {
+        "total_amount": 127835.35114200001,
+        "avg_amount": 1278.3535114200001,
+        "unique_customers": 94,
+        "unique_products": 91
+      }
+    },
+    {
+      "batch_id": "2-8",
+      "records_processed": 100,
+      "processing_time": 0.002,
+      "throughput": 65751.75,
+      "data": null,
+      "summary": {
+        "total_amount": 125343.77977800001,
+        "avg_amount": 1253.4377977800002,
+        "unique_customers": 90,
+        "unique_products": 92
+      }
+    },
+    {
+      "batch_id": "2-9",
+      "records_processed": 100,
+      "processing_time": 0.002,
+      "throughput": 65648.83,
+      "data": null,
+      "summary": {
+        "total_amount": 125410.475409,
+        "avg_amount": 1254.1047540900001,
+        "unique_customers": 96,
+        "unique_products": 88
+      }
+    },
+    {
+      "batch_id": "2-5",
+      "records_processed": 100,
+      "processing_time": 0.008,
+      "throughput": 11768.53,
+      "data": null,
+      "summary": {
+        "total_amount": 129962.32258500002,
+        "avg_amount": 1299.6232258500002,
+        "unique_customers": 96,
+        "unique_products": 96
+      }
+    },
+    {
+      "batch_id": "3-3",
+      "records_processed": 100,
+      "processing_time": 0.004,
+      "throughput": 27145.84,
+      "data": null,
+      "summary": {
+        "total_amount": 137007.14636850002,
+        "avg_amount": 1370.0714636850003,
+        "unique_customers": 94,
+        "unique_products": 90
+      }
+    },
+    {
+      "batch_id": "3-2",
+      "records_processed": 100,
+      "processing_time": 0.005,
+      "throughput": 21983.88,
+      "data": null,
+      "summary": {
+        "total_amount": 131402.0920845,
+        "avg_amount": 1314.020920845,
+        "unique_customers": 93,
+        "unique_products": 87
+      }
+    },
+    {
+      "batch_id": "3-0",
+      "records_processed": 100,
+      "processing_time": 0.002,
+      "throughput": 55998.72,
+      "data": null,
+      "summary": {
+        "total_amount": 116144.8093605,
+        "avg_amount": 1161.448093605,
+        "unique_customers": 97,
+        "unique_products": 91
+      }
+    },
+    {
+      "batch_id": "3-1",
+      "records_processed": 100,
+      "processing_time": 0.002,
+      "throughput": 61926.83,
+      "data": null,
+      "summary": {
+        "total_amount": 137733.4555515,
+        "avg_amount": 1377.334555515,
+        "unique_customers": 95,
+        "unique_products": 82
+      }
+    },
+    {
+      "batch_id": "3-4",
+      "records_processed": 100,
+      "processing_time": 0.002,
+      "throughput": 64927.31,
+      "data": null,
+      "summary": {
+        "total_amount": 122557.73615099999,
+        "avg_amount": 1225.57736151,
+        "unique_customers": 96,
+        "unique_products": 93
+      }
+    },
+    {
+      "batch_id": "3-7",
+      "records_processed": 100,
+      "processing_time": 0.002,
+      "throughput": 64726.91,
+      "data": null,
+      "summary": {
+        "total_amount": 121220.09590499998,
+        "avg_amount": 1212.2009590499997,
+        "unique_customers": 97,
+        "unique_products": 92
+      }
+    },
+    {
+      "batch_id": "3-5",
+      "records_processed": 100,
+      "processing_time": 0.006,
+      "throughput": 16241.88,
+      "data": null,
+      "summary": {
+        "total_amount": 135141.09356100002,
+        "avg_amount": 1351.4109356100003,
+        "unique_customers": 97,
+        "unique_products": 89
+      }
+    },
+    {
+      "batch_id": "3-9",
+      "records_processed": 100,
+      "processing_time": 0.002,
+      "throughput": 60176.53,
+      "data": null,
+      "summary": {
+        "total_amount": 110226.0626595,
+        "avg_amount": 1102.260626595,
+        "unique_customers": 94,
+        "unique_products": 89
+      }
+    },
+    {
+      "batch_id": "3-6",
+      "records_processed": 100,
+      "processing_time": 0.007,
+      "throughput": 14695.2,
+      "data": null,
+      "summary": {
+        "total_amount": 140531.49840150002,
+        "avg_amount": 1405.3149840150002,
+        "unique_customers": 97,
+        "unique_products": 92
+      }
+    },
+    {
+      "batch_id": "3-8",
+      "records_processed": 100,
+      "processing_time": 0.004,
+      "throughput": 24957.18,
+      "data": null,
+      "summary": {
+        "total_amount": 127791.92537550001,
+        "avg_amount": 1277.919253755,
+        "unique_customers": 95,
+        "unique_products": 94
+      }
+    },
+    {
+      "batch_id": "4-4",
+      "records_processed": 100,
+      "processing_time": 0.005,
+      "throughput": 19599.55,
+      "data": null,
+      "summary": {
+        "total_amount": 147905.31094800003,
+        "avg_amount": 1479.0531094800003,
+        "unique_customers": 98,
+        "unique_products": 94
+      }
+    },
+    {
+      "batch_id": "4-2",
+      "records_processed": 100,
+      "processing_time": 0.008,
+      "throughput": 12073.07,
+      "data": null,
+      "summary": {
+        "total_amount": 141339.41087550003,
+        "avg_amount": 1413.3941087550004,
+        "unique_customers": 94,
+        "unique_products": 97
+      }
+    },
+    {
+      "batch_id": "4-3",
+      "records_processed": 100,
+      "processing_time": 0.002,
+      "throughput": 59918.63,
+      "data": null,
+      "summary": {
+        "total_amount": 138535.290153,
+        "avg_amount": 1385.35290153,
+        "unique_customers": 93,
+        "unique_products": 94
+      }
+    },
+    {
+      "batch_id": "4-0",
+      "records_processed": 100,
+      "processing_time": 0.002,
+      "throughput": 58238.04,
+      "data": null,
+      "summary": {
+        "total_amount": 142985.949255,
+        "avg_amount": 1429.8594925500001,
+        "unique_customers": 97,
+        "unique_products": 90
+      }
+    },
+    {
+      "batch_id": "4-5",
+      "records_processed": 100,
+      "processing_time": 0.002,
+      "throughput": 58850.91,
+      "data": null,
+      "summary": {
+        "total_amount": 123819.0732645,
+        "avg_amount": 1238.190732645,
+        "unique_customers": 94,
+        "unique_products": 94
+      }
+    },
+    {
+      "batch_id": "4-1",
+      "records_processed": 100,
+      "processing_time": 0.001,
+      "throughput": 67237.96,
+      "data": null,
+      "summary": {
+        "total_amount": 135043.79077649998,
+        "avg_amount": 1350.4379077649999,
+        "unique_customers": 95,
+        "unique_products": 88
+      }
+    },
+    {
+      "batch_id": "4-6",
+      "records_processed": 100,
+      "processing_time": 0.002,
+      "throughput": 44839.68,
+      "data": null,
+      "summary": {
+        "total_amount": 150917.62657350002,
+        "avg_amount": 1509.1762657350002,
+        "unique_customers": 94,
+        "unique_products": 92
+      }
+    },
+    {
+      "batch_id": "4-7",
+      "records_processed": 100,
+      "processing_time": 0.002,
+      "throughput": 64907.21,
+      "data": null,
+      "summary": {
+        "total_amount": 131728.3248615,
+        "avg_amount": 1317.283248615,
+        "unique_customers": 91,
+        "unique_products": 87
+      }
+    },
+    {
+      "batch_id": "4-9",
+      "records_processed": 100,
+      "processing_time": 0.002,
+      "throughput": 59705.4,
+      "data": null,
+      "summary": {
+        "total_amount": 121656.20626650003,
+        "avg_amount": 1216.5620626650002,
+        "unique_customers": 96,
+        "unique_products": 93
+      }
+    },
+    {
+      "batch_id": "4-8",
+      "records_processed": 100,
+      "processing_time": 0.003,
+      "throughput": 30360.51,
+      "data": null,
+      "summary": {
+        "total_amount": 136820.41788300005,
+        "avg_amount": 1368.2041788300005,
+        "unique_customers": 94,
+        "unique_products": 92
+      }
+    },
+    {
+      "batch_id": "5-2",
+      "records_processed": 100,
+      "processing_time": 0.005,
+      "throughput": 21115.1,
+      "data": null,
+      "summary": {
+        "total_amount": 139653.9014715,
+        "avg_amount": 1396.539014715,
+        "unique_customers": 91,
+        "unique_products": 94
+      }
+    },
+    {
+      "batch_id": "5-1",
+      "records_processed": 100,
+      "processing_time": 0.002,
+      "throughput": 53355.86,
+      "data": null,
+      "summary": {
+        "total_amount": 137666.4566985,
+        "avg_amount": 1376.664566985,
+        "unique_customers": 95,
+        "unique_products": 94
+      }
+    },
+    {
+      "batch_id": "5-0",
+      "records_processed": 100,
+      "processing_time": 0.002,
+      "throughput": 60167.9,
+      "data": null,
+      "summary": {
+        "total_amount": 138916.69977150002,
+        "avg_amount": 1389.1669977150002,
+        "unique_customers": 93,
+        "unique_products": 90
+      }
+    },
+    {
+      "batch_id": "5-3",
+      "records_processed": 100,
+      "processing_time": 0.004,
+      "throughput": 28121.38,
+      "data": null,
+      "summary": {
+        "total_amount": 136791.19115400003,
+        "avg_amount": 1367.9119115400003,
+        "unique_customers": 90,
+        "unique_products": 90
+      }
+    },
+    {
+      "batch_id": "5-6",
+      "records_processed": 100,
+      "processing_time": 0.002,
+      "throughput": 62350.29,
+      "data": null,
+      "summary": {
+        "total_amount": 130715.0896725,
+        "avg_amount": 1307.1508967250002,
+        "unique_customers": 93,
+        "unique_products": 94
+      }
+    },
+    {
+      "batch_id": "5-7",
+      "records_processed": 100,
+      "processing_time": 0.002,
+      "throughput": 66177.09,
+      "data": null,
+      "summary": {
+        "total_amount": 124085.55538199999,
+        "avg_amount": 1240.8555538199998,
+        "unique_customers": 94,
+        "unique_products": 92
+      }
+    },
+    {
+      "batch_id": "5-8",
+      "records_processed": 100,
+      "processing_time": 0.002,
+      "throughput": 66491.82,
+      "data": null,
+      "summary": {
+        "total_amount": 132144.9376755,
+        "avg_amount": 1321.449376755,
+        "unique_customers": 95,
+        "unique_products": 89
+      }
+    },
+    {
+      "batch_id": "5-9",
+      "records_processed": 100,
+      "processing_time": 0.001,
+      "throughput": 67792.21,
+      "data": null,
+      "summary": {
+        "total_amount": 110640.73278300001,
+        "avg_amount": 1106.4073278300002,
+        "unique_customers": 98,
+        "unique_products": 91
+      }
+    },
+    {
+      "batch_id": "5-4",
+      "records_processed": 100,
+      "processing_time": 0.01,
+      "throughput": 9766.69,
+      "data": null,
+      "summary": {
+        "total_amount": 121248.80387999999,
+        "avg_amount": 1212.4880388,
+        "unique_customers": 95,
+        "unique_products": 92
+      }
+    },
+    {
+      "batch_id": "5-5",
+      "records_processed": 100,
+      "processing_time": 0.008,
+      "throughput": 12000.18,
+      "data": null,
+      "summary": {
+        "total_amount": 143816.70135900003,
+        "avg_amount": 1438.1670135900004,
+        "unique_customers": 94,
+        "unique_products": 93
+      }
+    },
+    {
+      "batch_id": "6-3",
+      "records_processed": 100,
+      "processing_time": 0.002,
+      "throughput": 56918.22,
+      "data": null,
+      "summary": {
+        "total_amount": 141013.85253449998,
+        "avg_amount": 1410.1385253449998,
+        "unique_customers": 95,
+        "unique_products": 92
+      }
+    },
+    {
+      "batch_id": "6-1",
+      "records_processed": 100,
+      "processing_time": 0.007,
+      "throughput": 15351.38,
+      "data": null,
+      "summary": {
+        "total_amount": 130379.87547600002,
+        "avg_amount": 1303.79875476,
+        "unique_customers": 96,
+        "unique_products": 92
+      }
+    },
+    {
+      "batch_id": "6-0",
+      "records_processed": 100,
+      "processing_time": 0.002,
+      "throughput": 55753.08,
+      "data": null,
+      "summary": {
+        "total_amount": 106508.4814425,
+        "avg_amount": 1065.0848144249999,
+        "unique_customers": 96,
+        "unique_products": 92
+      }
+    },
+    {
+      "batch_id": "6-6",
+      "records_processed": 100,
+      "processing_time": 0.003,
+      "throughput": 29825.1,
+      "data": null,
+      "summary": {
+        "total_amount": 142492.49745000002,
+        "avg_amount": 1424.9249745000002,
+        "unique_customers": 95,
+        "unique_products": 89
+      }
+    },
+    {
+      "batch_id": "6-4",
+      "records_processed": 100,
+      "processing_time": 0.002,
+      "throughput": 55093.97,
+      "data": null,
+      "summary": {
+        "total_amount": 113864.23383750001,
+        "avg_amount": 1138.642338375,
+        "unique_customers": 98,
+        "unique_products": 90
+      }
+    },
+    {
+      "batch_id": "6-5",
+      "records_processed": 100,
+      "processing_time": 0.005,
+      "throughput": 19728.62,
+      "data": null,
+      "summary": {
+        "total_amount": 119665.49068500001,
+        "avg_amount": 1196.65490685,
+        "unique_customers": 94,
+        "unique_products": 94
+      }
+    },
+    {
+      "batch_id": "6-7",
+      "records_processed": 100,
+      "processing_time": 0.002,
+      "throughput": 62695.13,
+      "data": null,
+      "summary": {
+        "total_amount": 108840.7124625,
+        "avg_amount": 1088.407124625,
+        "unique_customers": 93,
+        "unique_products": 87
+      }
+    },
+    {
+      "batch_id": "6-2",
+      "records_processed": 100,
+      "processing_time": 0.002,
+      "throughput": 60532.6,
+      "data": null,
+      "summary": {
+        "total_amount": 136838.03343750004,
+        "avg_amount": 1368.3803343750003,
+        "unique_customers": 95,
+        "unique_products": 92
+      }
+    },
+    {
+      "batch_id": "6-8",
+      "records_processed": 100,
+      "processing_time": 0.002,
+      "throughput": 66000.06,
+      "data": null,
+      "summary": {
+        "total_amount": 131803.19161050004,
+        "avg_amount": 1318.0319161050004,
+        "unique_customers": 97,
+        "unique_products": 93
+      }
+    },
+    {
+      "batch_id": "6-9",
+      "records_processed": 100,
+      "processing_time": 0.002,
+      "throughput": 52771.82,
+      "data": null,
+      "summary": {
+        "total_amount": 130482.365145,
+        "avg_amount": 1304.82365145,
+        "unique_customers": 96,
+        "unique_products": 87
+      }
+    },
+    {
+      "batch_id": "7-2",
+      "records_processed": 100,
+      "processing_time": 0.002,
+      "throughput": 54920.83,
+      "data": null,
+      "summary": {
+        "total_amount": 132007.603944,
+        "avg_amount": 1320.07603944,
+        "unique_customers": 98,
+        "unique_products": 89
+      }
+    },
+    {
+      "batch_id": "7-4",
+      "records_processed": 100,
+      "processing_time": 0.004,
+      "throughput": 27548.79,
+      "data": null,
+      "summary": {
+        "total_amount": 132696.708756,
+        "avg_amount": 1326.96708756,
+        "unique_customers": 95,
+        "unique_products": 89
+      }
+    },
+    {
+      "batch_id": "7-0",
+      "records_processed": 100,
+      "processing_time": 0.002,
+      "throughput": 60751.8,
+      "data": null,
+      "summary": {
+        "total_amount": 121561.9817985,
+        "avg_amount": 1215.619817985,
+        "unique_customers": 95,
+        "unique_products": 91
+      }
+    },
+    {
+      "batch_id": "7-5",
+      "records_processed": 100,
+      "processing_time": 0.002,
+      "throughput": 57964.4,
+      "data": null,
+      "summary": {
+        "total_amount": 118812.719784,
+        "avg_amount": 1188.12719784,
+        "unique_customers": 98,
+        "unique_products": 91
+      }
+    },
+    {
+      "batch_id": "7-1",
+      "records_processed": 100,
+      "processing_time": 0.002,
+      "throughput": 63782.0,
+      "data": null,
+      "summary": {
+        "total_amount": 131282.59143,
+        "avg_amount": 1312.8259143,
+        "unique_customers": 94,
+        "unique_products": 89
+      }
+    },
+    {
+      "batch_id": "7-3",
+      "records_processed": 100,
+      "processing_time": 0.002,
+      "throughput": 57606.15,
+      "data": null,
+      "summary": {
+        "total_amount": 135444.46787850003,
+        "avg_amount": 1354.4446787850002,
+        "unique_customers": 97,
+        "unique_products": 92
+      }
+    },
+    {
+      "batch_id": "7-6",
+      "records_processed": 100,
+      "processing_time": 0.002,
+      "throughput": 66271.2,
+      "data": null,
+      "summary": {
+        "total_amount": 135295.02334349998,
+        "avg_amount": 1352.9502334349997,
+        "unique_customers": 96,
+        "unique_products": 92
+      }
+    },
+    {
+      "batch_id": "7-7",
+      "records_processed": 100,
+      "processing_time": 0.002,
+      "throughput": 57503.48,
+      "data": null,
+      "summary": {
+        "total_amount": 143833.29329700003,
+        "avg_amount": 1438.3329329700002,
+        "unique_customers": 96,
+        "unique_products": 89
+      }
+    },
+    {
+      "batch_id": "7-8",
+      "records_processed": 100,
+      "processing_time": 0.003,
+      "throughput": 32415.98,
+      "data": null,
+      "summary": {
+        "total_amount": 123007.21036049999,
+        "avg_amount": 1230.072103605,
+        "unique_customers": 95,
+        "unique_products": 89
+      }
+    },
+    {
+      "batch_id": "7-9",
+      "records_processed": 100,
+      "processing_time": 0.002,
+      "throughput": 49142.4,
+      "data": null,
+      "summary": {
+        "total_amount": 126099.79798950002,
+        "avg_amount": 1260.997979895,
+        "unique_customers": 92,
+        "unique_products": 88
+      }
+    },
+    {
+      "batch_id": "8-3",
+      "records_processed": 100,
+      "processing_time": 0.002,
+      "throughput": 48686.06,
+      "data": null,
+      "summary": {
+        "total_amount": 123400.51956150001,
+        "avg_amount": 1234.005195615,
+        "unique_customers": 95,
+        "unique_products": 89
+      }
+    },
+    {
+      "batch_id": "8-1",
+      "records_processed": 100,
+      "processing_time": 0.005,
+      "throughput": 21017.76,
+      "data": null,
+      "summary": {
+        "total_amount": 127099.93466400001,
+        "avg_amount": 1270.99934664,
+        "unique_customers": 93,
+        "unique_products": 86
+      }
+    },
+    {
+      "batch_id": "8-0",
+      "records_processed": 100,
+      "processing_time": 0.002,
+      "throughput": 62854.85,
+      "data": null,
+      "summary": {
+        "total_amount": 112080.3835065,
+        "avg_amount": 1120.803835065,
+        "unique_customers": 94,
+        "unique_products": 89
+      }
+    },
+    {
+      "batch_id": "8-2",
+      "records_processed": 100,
+      "processing_time": 0.002,
+      "throughput": 64270.67,
+      "data": null,
+      "summary": {
+        "total_amount": 128677.46669100001,
+        "avg_amount": 1286.7746669100002,
+        "unique_customers": 93,
+        "unique_products": 88
+      }
+    },
+    {
+      "batch_id": "8-5",
+      "records_processed": 100,
+      "processing_time": 0.002,
+      "throughput": 61890.28,
+      "data": null,
+      "summary": {
+        "total_amount": 145915.26139200001,
+        "avg_amount": 1459.1526139200002,
+        "unique_customers": 87,
+        "unique_products": 90
+      }
+    },
+    {
+      "batch_id": "8-6",
+      "records_processed": 100,
+      "processing_time": 0.002,
+      "throughput": 51275.11,
+      "data": null,
+      "summary": {
+        "total_amount": 124876.02544200001,
+        "avg_amount": 1248.7602544200001,
+        "unique_customers": 96,
+        "unique_products": 92
+      }
+    },
+    {
+      "batch_id": "8-7",
+      "records_processed": 100,
+      "processing_time": 0.001,
+      "throughput": 67432.54,
+      "data": null,
+      "summary": {
+        "total_amount": 130500.97314300001,
+        "avg_amount": 1305.00973143,
+        "unique_customers": 94,
+        "unique_products": 87
+      }
+    },
+    {
+      "batch_id": "8-9",
+      "records_processed": 100,
+      "processing_time": 0.002,
+      "throughput": 58278.5,
+      "data": null,
+      "summary": {
+        "total_amount": 118648.91088450002,
+        "avg_amount": 1186.4891088450001,
+        "unique_customers": 95,
+        "unique_products": 92
+      }
+    },
+    {
+      "batch_id": "8-4",
+      "records_processed": 100,
+      "processing_time": 0.01,
+      "throughput": 9879.18,
+      "data": null,
+      "summary": {
+        "total_amount": 122986.97832000001,
+        "avg_amount": 1229.8697832,
+        "unique_customers": 96,
+        "unique_products": 93
+      }
+    },
+    {
+      "batch_id": "8-8",
+      "records_processed": 100,
+      "processing_time": 0.004,
+      "throughput": 27232.2,
+      "data": null,
+      "summary": {
+        "total_amount": 131284.9855305,
+        "avg_amount": 1312.8498553050001,
+        "unique_customers": 93,
+        "unique_products": 89
+      }
+    },
+    {
+      "batch_id": "9-1",
+      "records_processed": 100,
+      "processing_time": 0.004,
+      "throughput": 28153.47,
+      "data": null,
+      "summary": {
+        "total_amount": 134748.97518899996,
+        "avg_amount": 1347.4897518899995,
+        "unique_customers": 95,
+        "unique_products": 88
+      }
+    },
+    {
+      "batch_id": "9-0",
+      "records_processed": 100,
+      "processing_time": 0.002,
+      "throughput": 60981.45,
+      "data": null,
+      "summary": {
+        "total_amount": 124076.755065,
+        "avg_amount": 1240.76755065,
+        "unique_customers": 93,
+        "unique_products": 94
+      }
+    },
+    {
+      "batch_id": "9-2",
+      "records_processed": 100,
+      "processing_time": 0.002,
+      "throughput": 56337.19,
+      "data": null,
+      "summary": {
+        "total_amount": 123490.1419755,
+        "avg_amount": 1234.901419755,
+        "unique_customers": 96,
+        "unique_products": 90
+      }
+    },
+    {
+      "batch_id": "9-3",
+      "records_processed": 100,
+      "processing_time": 0.002,
+      "throughput": 52298.05,
+      "data": null,
+      "summary": {
+        "total_amount": 119712.695754,
+        "avg_amount": 1197.12695754,
+        "unique_customers": 97,
+        "unique_products": 86
+      }
+    },
+    {
+      "batch_id": "9-6",
+      "records_processed": 100,
+      "processing_time": 0.003,
+      "throughput": 32896.5,
+      "data": null,
+      "summary": {
+        "total_amount": 122790.13200150001,
+        "avg_amount": 1227.901320015,
+        "unique_customers": 96,
+        "unique_products": 92
+      }
+    },
+    {
+      "batch_id": "9-8",
+      "records_processed": 100,
+      "processing_time": 0.002,
+      "throughput": 64221.47,
+      "data": null,
+      "summary": {
+        "total_amount": 127441.79638049999,
+        "avg_amount": 1274.417963805,
+        "unique_customers": 91,
+        "unique_products": 93
+      }
+    },
+    {
+      "batch_id": "9-9",
+      "records_processed": 100,
+      "processing_time": 0.002,
+      "throughput": 64857.03,
+      "data": null,
+      "summary": {
+        "total_amount": 132144.2134725,
+        "avg_amount": 1321.442134725,
+        "unique_customers": 94,
+        "unique_products": 89
+      }
+    },
+    {
+      "batch_id": "9-5",
+      "records_processed": 100,
+      "processing_time": 0.008,
+      "throughput": 12189.2,
+      "data": null,
+      "summary": {
+        "total_amount": 124926.9253425,
+        "avg_amount": 1249.269253425,
+        "unique_customers": 93,
+        "unique_products": 91
+      }
+    },
+    {
+      "batch_id": "9-4",
+      "records_processed": 100,
+      "processing_time": 0.01,
+      "throughput": 10070.36,
+      "data": null,
+      "summary": {
+        "total_amount": 139018.24132499998,
+        "avg_amount": 1390.1824132499999,
+        "unique_customers": 94,
+        "unique_products": 88
+      }
+    },
+    {
+      "batch_id": "9-7",
+      "records_processed": 100,
+      "processing_time": 0.006,
+      "throughput": 16986.49,
+      "data": null,
+      "summary": {
+        "total_amount": 129045.6271215,
+        "avg_amount": 1290.456271215,
+        "unique_customers": 96,
+        "unique_products": 90
+      }
+    },
+    {
+      "batch_id": "10-0",
+      "records_processed": 100,
+      "processing_time": 0.002,
+      "throughput": 61275.44,
+      "data": null,
+      "summary": {
+        "total_amount": 102175.41830099998,
+        "avg_amount": 1021.7541830099998,
+        "unique_customers": 98,
+        "unique_products": 85
+      }
+    },
+    {
+      "batch_id": "10-3",
+      "records_processed": 100,
+      "processing_time": 0.001,
+      "throughput": 67162.59,
+      "data": null,
+      "summary": {
+        "total_amount": 133096.533864,
+        "avg_amount": 1330.96533864,
+        "unique_customers": 95,
+        "unique_products": 86
+      }
+    },
+    {
+      "batch_id": "10-2",
+      "records_processed": 100,
+      "processing_time": 0.006,
+      "throughput": 16524.07,
+      "data": null,
+      "summary": {
+        "total_amount": 124322.75984849998,
+        "avg_amount": 1243.2275984849998,
+        "unique_customers": 89,
+        "unique_products": 97
+      }
+    },
+    {
+      "batch_id": "10-1",
+      "records_processed": 100,
+      "processing_time": 0.004,
+      "throughput": 26997.32,
+      "data": null,
+      "summary": {
+        "total_amount": 129507.28963050002,
+        "avg_amount": 1295.072896305,
+        "unique_customers": 98,
+        "unique_products": 94
+      }
+    },
+    {
+      "batch_id": "10-4",
+      "records_processed": 100,
+      "processing_time": 0.002,
+      "throughput": 66135.35,
+      "data": null,
+      "summary": {
+        "total_amount": 127768.54274250001,
+        "avg_amount": 1277.6854274250002,
+        "unique_customers": 97,
+        "unique_products": 92
+      }
+    },
+    {
+      "batch_id": "10-5",
+      "records_processed": 100,
+      "processing_time": 0.003,
+      "throughput": 37549.72,
+      "data": null,
+      "summary": {
+        "total_amount": 133580.699889,
+        "avg_amount": 1335.8069988900002,
+        "unique_customers": 93,
+        "unique_products": 90
+      }
+    },
+    {
+      "batch_id": "10-8",
+      "records_processed": 100,
+      "processing_time": 0.003,
+      "throughput": 33748.83,
+      "data": null,
+      "summary": {
+        "total_amount": 147779.31268200002,
+        "avg_amount": 1477.7931268200002,
+        "unique_customers": 95,
+        "unique_products": 90
+      }
+    },
+    {
+      "batch_id": "10-9",
+      "records_processed": 100,
+      "processing_time": 0.002,
+      "throughput": 51813.51,
+      "data": null,
+      "summary": {
+        "total_amount": 126212.22774150004,
+        "avg_amount": 1262.1222774150003,
+        "unique_customers": 94,
+        "unique_products": 91
+      }
+    },
+    {
+      "batch_id": "10-7",
+      "records_processed": 100,
+      "processing_time": 0.005,
+      "throughput": 19278.84,
+      "data": null,
+      "summary": {
+        "total_amount": 118336.2708915,
+        "avg_amount": 1183.362708915,
+        "unique_customers": 95,
+        "unique_products": 86
+      }
+    },
+    {
+      "batch_id": "10-6",
+      "records_processed": 100,
+      "processing_time": 0.007,
+      "throughput": 14442.2,
+      "data": null,
+      "summary": {
+        "total_amount": 107191.7913135,
+        "avg_amount": 1071.917913135,
+        "unique_customers": 95,
+        "unique_products": 88
+      }
+    }
+  ]
+}

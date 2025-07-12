@@ -1,0 +1,146 @@
+2025-07-12 21:19:10,581 - INFO - [MainThread] - Database not configured or SQLAlchemy not available - running in simulation mode
+2025-07-12 21:19:10,581 - INFO - [MainThread] - Initialized OptimizedDataProcessor with config: {'chunk_size': 1000, 'batch_size': 100, 'max_workers': 4, 'use_database': False, 'db_host': 'localhost', 'db_port': 5432, 'db_name': 'testdb', 'db_user': 'postgres', 'db_password': 'password'}
+2025-07-12 21:19:10,582 - INFO - [MainThread] - Running with simulated data...
+2025-07-12 21:19:10,582 - INFO - [MainThread] - ============================================================
+2025-07-12 21:19:10,582 - INFO - [MainThread] - STARTING OPTIMIZED DATA PROCESSING PIPELINE
+2025-07-12 21:19:10,582 - INFO - [MainThread] - ============================================================
+2025-07-12 21:19:10,582 - INFO - [MainThread] - Generating 10000 sample records in chunks
+2025-07-12 21:19:10,588 - INFO - [MainThread] - Processing chunk 1...
+2025-07-12 21:19:10,588 - INFO - [MainThread] - Processing chunk 1 with 1000 records using 4 workers
+2025-07-12 21:19:10,613 - INFO - [MainThread] - Chunk 1 completed: 10 batches processed
+2025-07-12 21:19:10,613 - INFO - [MainThread] - Performance Metrics: {
+  "elapsed_time": 0.03,
+  "processed_records": 1000,
+  "error_count": 0,
+  "batch_count": 10,
+  "throughput": 31714.72,
+  "memory_usage": 50.0,
+  "cpu_usage": 25.0,
+  "errors_percentage": 0.0
+}
+2025-07-12 21:19:10,613 - INFO - [MainThread] - Processing chunk 2...
+2025-07-12 21:19:10,614 - INFO - [MainThread] - Processing chunk 2 with 1000 records using 4 workers
+2025-07-12 21:19:10,640 - INFO - [MainThread] - Chunk 2 completed: 10 batches processed
+2025-07-12 21:19:10,640 - INFO - [MainThread] - Performance Metrics: {
+  "elapsed_time": 0.06,
+  "processed_records": 2000,
+  "error_count": 0,
+  "batch_count": 20,
+  "throughput": 34214.92,
+  "memory_usage": 50.0,
+  "cpu_usage": 25.0,
+  "errors_percentage": 0.0
+}
+2025-07-12 21:19:10,640 - INFO - [MainThread] - Processing chunk 3...
+2025-07-12 21:19:10,640 - INFO - [MainThread] - Processing chunk 3 with 1000 records using 4 workers
+2025-07-12 21:19:10,660 - INFO - [MainThread] - Chunk 3 completed: 10 batches processed
+2025-07-12 21:19:10,660 - INFO - [MainThread] - Performance Metrics: {
+  "elapsed_time": 0.08,
+  "processed_records": 3000,
+  "error_count": 0,
+  "batch_count": 30,
+  "throughput": 38082.61,
+  "memory_usage": 50.0,
+  "cpu_usage": 25.0,
+  "errors_percentage": 0.0
+}
+2025-07-12 21:19:10,661 - INFO - [MainThread] - Processing chunk 4...
+2025-07-12 21:19:10,661 - INFO - [MainThread] - Processing chunk 4 with 1000 records using 4 workers
+2025-07-12 21:19:10,679 - INFO - [MainThread] - Chunk 4 completed: 10 batches processed
+2025-07-12 21:19:10,679 - INFO - [MainThread] - Performance Metrics: {
+  "elapsed_time": 0.1,
+  "processed_records": 4000,
+  "error_count": 0,
+  "batch_count": 40,
+  "throughput": 41009.16,
+  "memory_usage": 50.0,
+  "cpu_usage": 25.0,
+  "errors_percentage": 0.0
+}
+2025-07-12 21:19:10,680 - INFO - [MainThread] - Processing chunk 5...
+2025-07-12 21:19:10,680 - INFO - [MainThread] - Processing chunk 5 with 1000 records using 4 workers
+2025-07-12 21:19:10,697 - INFO - [MainThread] - Chunk 5 completed: 10 batches processed
+2025-07-12 21:19:10,698 - INFO - [MainThread] - Performance Metrics: {
+  "elapsed_time": 0.12,
+  "processed_records": 5000,
+  "error_count": 0,
+  "batch_count": 50,
+  "throughput": 43017.8,
+  "memory_usage": 50.0,
+  "cpu_usage": 25.0,
+  "errors_percentage": 0.0
+}
+2025-07-12 21:19:10,698 - INFO - [MainThread] - Processing chunk 6...
+2025-07-12 21:19:10,698 - INFO - [MainThread] - Processing chunk 6 with 1000 records using 4 workers
+2025-07-12 21:19:10,717 - INFO - [MainThread] - Chunk 6 completed: 10 batches processed
+2025-07-12 21:19:10,717 - INFO - [MainThread] - Performance Metrics: {
+  "elapsed_time": 0.14,
+  "processed_records": 6000,
+  "error_count": 0,
+  "batch_count": 60,
+  "throughput": 44260.52,
+  "memory_usage": 50.0,
+  "cpu_usage": 25.0,
+  "errors_percentage": 0.0
+}
+2025-07-12 21:19:10,717 - INFO - [MainThread] - Processing chunk 7...
+2025-07-12 21:19:10,717 - INFO - [MainThread] - Processing chunk 7 with 1000 records using 4 workers
+2025-07-12 21:19:10,736 - INFO - [MainThread] - Chunk 7 completed: 10 batches processed
+2025-07-12 21:19:10,736 - INFO - [MainThread] - Performance Metrics: {
+  "elapsed_time": 0.16,
+  "processed_records": 7000,
+  "error_count": 0,
+  "batch_count": 70,
+  "throughput": 45158.94,
+  "memory_usage": 50.0,
+  "cpu_usage": 25.0,
+  "errors_percentage": 0.0
+}
+2025-07-12 21:19:10,737 - INFO - [MainThread] - Processing chunk 8...
+2025-07-12 21:19:10,737 - INFO - [MainThread] - Processing chunk 8 with 1000 records using 4 workers
+2025-07-12 21:19:10,755 - INFO - [MainThread] - Chunk 8 completed: 10 batches processed
+2025-07-12 21:19:10,755 - INFO - [MainThread] - Performance Metrics: {
+  "elapsed_time": 0.17,
+  "processed_records": 8000,
+  "error_count": 0,
+  "batch_count": 80,
+  "throughput": 46060.63,
+  "memory_usage": 50.0,
+  "cpu_usage": 25.0,
+  "errors_percentage": 0.0
+}
+2025-07-12 21:19:10,756 - INFO - [MainThread] - Processing chunk 9...
+2025-07-12 21:19:10,756 - INFO - [MainThread] - Processing chunk 9 with 1000 records using 4 workers
+2025-07-12 21:19:10,774 - INFO - [MainThread] - Chunk 9 completed: 10 batches processed
+2025-07-12 21:19:10,774 - INFO - [MainThread] - Performance Metrics: {
+  "elapsed_time": 0.19,
+  "processed_records": 9000,
+  "error_count": 0,
+  "batch_count": 90,
+  "throughput": 46708.85,
+  "memory_usage": 50.0,
+  "cpu_usage": 25.0,
+  "errors_percentage": 0.0
+}
+2025-07-12 21:19:10,775 - INFO - [MainThread] - Processing chunk 10...
+2025-07-12 21:19:10,775 - INFO - [MainThread] - Processing chunk 10 with 1000 records using 4 workers
+2025-07-12 21:19:10,793 - INFO - [MainThread] - Chunk 10 completed: 10 batches processed
+2025-07-12 21:19:10,793 - INFO - [MainThread] - Performance Metrics: {
+  "elapsed_time": 0.21,
+  "processed_records": 10000,
+  "error_count": 0,
+  "batch_count": 100,
+  "throughput": 47302.78,
+  "memory_usage": 50.0,
+  "cpu_usage": 25.0,
+  "errors_percentage": 0.0
+}
+2025-07-12 21:19:10,793 - INFO - [MainThread] - ============================================================
+2025-07-12 21:19:10,793 - INFO - [MainThread] - PROCESSING COMPLETED SUCCESSFULLY
+2025-07-12 21:19:10,793 - INFO - [MainThread] - ============================================================
+2025-07-12 21:19:10,793 - INFO - [MainThread] - Total Time: 0.21 seconds
+2025-07-12 21:19:10,793 - INFO - [MainThread] - Records Processed: 10000
+2025-07-12 21:19:10,793 - INFO - [MainThread] - Average Throughput: 47285.98 records/second
+2025-07-12 21:19:10,793 - INFO - [MainThread] - Memory Usage: 50.00%
+2025-07-12 21:19:10,793 - INFO - [MainThread] - Error Rate: 0.00%
+2025-07-12 21:19:10,794 - INFO - [MainThread] - Results saved to optimized_results_20250712_211910.json

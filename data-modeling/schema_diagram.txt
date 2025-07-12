@@ -1,0 +1,272 @@
+```
+┌─────────────────────────────────────────────────────────────────────────────────────┐
+│                           E-COMMERCE DATA WAREHOUSE                                 │
+│                                 STAR SCHEMA                                         │
+└─────────────────────────────────────────────────────────────────────────────────────┘
+
+
+                    ┌─────────────────────────────────────┐
+                    │          Fact_Orders                │
+                    │  (Central Fact Table)               │
+                    ├─────────────────────────────────────┤
+                    │ OrderID (PK)         BIGINT         │
+                    │ OrderLineID          BIGINT         │
+                    │ DateKey (FK)         INT     ───────┼──────┐
+                    │ CustomerKey (FK)     BIGINT  ───────┼──┐   │
+                    │ ProductKey (FK)      BIGINT  ───────┼─┐│   │
+                    │ StoreKey (FK)        INT     ───────┼┐││   │
+                    │ PaymentKey (FK)      INT     ───────┼│││   │
+                    │                                     ││││   │
+                    │ ═══ MEASURES ═══                    ││││   │
+                    │ Quantity             DECIMAL(10,2)  ││││   │
+                    │ UnitPrice            DECIMAL(10,2)  ││││   │
+                    │ LineTotal            DECIMAL(10,2)  ││││   │
+                    │ Discount             DECIMAL(10,2)  ││││   │
+                    │ Tax                  DECIMAL(10,2)  ││││   │
+                    │ ShippingCost         DECIMAL(10,2)  ││││   │
+                    │ UnitCost             DECIMAL(10,2)  ││││   │
+                    │ Profit (Calculated)  DECIMAL(10,2)  ││││   │
+                    │                                     ││││   │
+                    │ CreatedDate          TIMESTAMP      ││││   │
+                    │ ETLBatchID           VARCHAR(50)    ││││   │
+                    └─────────────────────────────────────┘│││   │
+                                                           │││   │
+┌──────────────────────────────────────────────────────────┘││   │
+│                                                           ││   │
+│  ┌─────────────────────────────────────┐                  ││   │
+│  │         Dim_Customer                │                  ││   │
+│  │     (Customer Dimension)            │                  ││   │
+│  ├─────────────────────────────────────┤                  ││   │
+│  │ CustomerKey (PK)     BIGINT         │                  ││   │
+│  │ CustomerID           VARCHAR(50)    │                  ││   │
+│  │                                     │                  ││   │
+│  │ ═══ PERSONAL INFO ═══               │                  ││   │
+│  │ FirstName            VARCHAR(100)   │                  ││   │
+│  │ LastName             VARCHAR(100)   │                  ││   │
+│  │ Email                VARCHAR(200)   │                  ││   │
+│  │ Phone                VARCHAR(20)    │                  ││   │
+│  │                                     │                  ││   │
+│  │ ═══ ADDRESS ═══                     │                  ││   │
+│  │ Address              VARCHAR(500)   │                  ││   │
+│  │ City                 VARCHAR(100)   │                  ││   │
+│  │ State                VARCHAR(100)   │                  ││   │
+│  │ PostalCode           VARCHAR(20)    │                  ││   │
+│  │ Country              VARCHAR(100)   │                  ││   │
+│  │ Latitude             DECIMAL(10,8)  │                  ││   │
+│  │ Longitude            DECIMAL(11,8)  │                  ││   │
+│  │                                     │                  ││   │
+│  │ ═══ ANALYTICS ═══                   │                  ││   │
+│  │ CustomerSegment      VARCHAR(50)    │                  ││   │
+│  │ LifetimeValue        DECIMAL(12,2)  │                  ││   │
+│  │ TotalOrders          INT            │                  ││   │
+│  │ RegistrationDate     DATE           │                  ││   │
+│  │ LastOrderDate        DATE           │                  ││   │
+│  │ IsActive             BOOLEAN        │                  ││   │
+│  │                                     │                  ││   │
+│  │ ═══ SCD TYPE 2 ═══                  │                  ││   │
+│  │ EffectiveDate        DATE           │                  ││   │
+│  │ ExpiryDate           DATE           │                  ││   │
+│  │ IsCurrent            BOOLEAN        │                  ││   │
+│  │ ETLBatchID           VARCHAR(50)    │                  ││   │
+│  └─────────────────────────────────────┘                  ││   │
+│                                                           ││   │
+└───────────────────────────────────────────────────────────┘│   │
+                                                             │   │
+┌─────────────────────────────────────────────────────────────┘   │
+│                                                               │
+│  ┌─────────────────────────────────────┐                      │
+│  │         Dim_Product                 │                      │
+│  │      (Product Dimension)            │                      │
+│  ├─────────────────────────────────────┤                      │
+│  │ ProductKey (PK)      BIGINT         │                      │
+│  │ ProductID            VARCHAR(50)    │                      │
+│  │                                     │                      │
+│  │ ═══ PRODUCT INFO ═══                │                      │
+│  │ ProductName          VARCHAR(200)   │                      │
+│  │ ProductDescription   TEXT           │                      │
+│  │ SKU                  VARCHAR(100)   │                      │
+│  │ UPC                  VARCHAR(50)    │                      │
+│  │                                     │                      │
+│  │ ═══ HIERARCHY ═══                   │                      │
+│  │ CategoryL1           VARCHAR(100)   │                      │
+│  │ CategoryL2           VARCHAR(100)   │                      │
+│  │ CategoryL3           VARCHAR(100)   │                      │
+│  │ Brand                VARCHAR(100)   │                      │
+│  │                                     │                      │
+│  │ ═══ PRICING ═══                     │                      │
+│  │ UnitCost             DECIMAL(10,2)  │                      │
+│  │ ListPrice            DECIMAL(10,2)  │                      │
+│  │ WholesalePrice       DECIMAL(10,2)  │                      │
+│  │                                     │                      │
+│  │ ═══ ATTRIBUTES ═══                  │                      │
+│  │ Color                VARCHAR(50)    │                      │
+│  │ Size                 VARCHAR(50)    │                      │
+│  │ Weight               DECIMAL(8,2)   │                      │
+│  │ Dimensions           VARCHAR(100)   │                      │
+│  │                                     │                      │
+│  │ ═══ STATUS ═══                      │                      │
+│  │ IsDiscontinued       BOOLEAN        │                      │
+│  │ LaunchDate           DATE           │                      │
+│  │ DiscontinuedDate     DATE           │                      │
+│  │                                     │                      │
+│  │ ═══ SCD TYPE 2 ═══                  │                      │
+│  │ EffectiveDate        DATE           │                      │
+│  │ ExpiryDate           DATE           │                      │
+│  │ IsCurrent            BOOLEAN        │                      │
+│  │ ETLBatchID           VARCHAR(50)    │                      │
+│  └─────────────────────────────────────┘                      │
+│                                                               │
+└───────────────────────────────────────────────────────────────┘
+
+
+┌─────────────────────────────────────────────────────────────────┐
+│                                                                 │
+│  ┌─────────────────────────────────────┐                        │
+│  │         Dim_Store                   │                        │
+│  │       (Store Dimension)             │                        │
+│  ├─────────────────────────────────────┤                        │
+│  │ StoreKey (PK)        INT            │                        │
+│  │ StoreID              VARCHAR(50)    │                        │
+│  │                                     │                        │
+│  │ ═══ STORE INFO ═══                  │                        │
+│  │ StoreName            VARCHAR(200)   │                        │
+│  │ StoreType            VARCHAR(50)    │                        │
+│  │ ManagerName          VARCHAR(100)   │                        │
+│  │ SquareFootage        INT            │                        │
+│  │                                     │                        │
+│  │ ═══ ADDRESS ═══                     │                        │
+│  │ Address              VARCHAR(500)   │                        │
+│  │ City                 VARCHAR(100)   │                        │
+│  │ State                VARCHAR(100)   │                        │
+│  │ PostalCode           VARCHAR(20)    │                        │
+│  │ Country              VARCHAR(100)   │                        │
+│  │ Region               VARCHAR(100)   │                        │
+│  │ District             VARCHAR(100)   │                        │
+│  │                                     │                        │
+│  │ ═══ DATES ═══                       │                        │
+│  │ OpenDate             DATE           │                        │
+│  │ CloseDate            DATE           │                        │
+│  │ IsActive             BOOLEAN        │                        │
+│  │ ETLBatchID           VARCHAR(50)    │                        │
+│  └─────────────────────────────────────┘                        │
+│                                                                 │
+└─────────────────────────────────────────────────────────────────┘
+
+
+┌───────────────────────────────────────────────────────────────────┐
+│                                                                   │
+│  ┌─────────────────────────────────────┐                          │
+│  │         Dim_Date                    │                          │
+│  │      (Time Dimension)               │                          │
+│  ├─────────────────────────────────────┤                          │
+│  │ DateKey (PK)         INT            │ Format: YYYYMMDD         │
+│  │ Date                 DATE           │                          │
+│  │                                     │                          │
+│  │ ═══ DAY ATTRIBUTES ═══              │                          │
+│  │ DayOfWeek            INT            │ 1-7                      │
+│  │ DayName              VARCHAR(10)    │ Monday, Tuesday...       │
+│  │ DayOfMonth           INT            │ 1-31                     │
+│  │ DayOfYear            INT            │ 1-366                    │
+│  │                                     │                          │
+│  │ ═══ WEEK ATTRIBUTES ═══             │                          │
+│  │ WeekOfYear           INT            │ 1-53                     │
+│  │ WeekOfMonth          INT            │ 1-6                      │
+│  │ WeekStartDate        DATE           │                          │
+│  │ WeekEndDate          DATE           │                          │
+│  │                                     │                          │
+│  │ ═══ MONTH ATTRIBUTES ═══            │                          │
+│  │ Month                INT            │ 1-12                     │
+│  │ MonthName            VARCHAR(20)    │ January, February...     │
+│  │ MonthAbbr            VARCHAR(3)     │ Jan, Feb...              │
+│  │ MonthStartDate       DATE           │                          │
+│  │ MonthEndDate         DATE           │                          │
+│  │ DaysInMonth          INT            │                          │
+│  │                                     │                          │
+│  │ ═══ QUARTER ATTRIBUTES ═══          │                          │
+│  │ Quarter              INT            │ 1-4                      │
+│  │ QuarterName          VARCHAR(10)    │ Q1, Q2, Q3, Q4           │
+│  │ QuarterStartDate     DATE           │                          │
+│  │ QuarterEndDate       DATE           │                          │
+│  │                                     │                          │
+│  │ ═══ YEAR ATTRIBUTES ═══             │                          │
+│  │ Year                 INT            │                          │
+│  │ YearName             VARCHAR(10)    │                          │
+│  │                                     │                          │
+│  │ ═══ FISCAL CALENDAR ═══             │                          │
+│  │ FiscalYear           INT            │                          │
+│  │ FiscalQuarter        INT            │                          │
+│  │ FiscalMonth          INT            │                          │
+│  │                                     │                          │
+│  │ ═══ SPECIAL INDICATORS ═══          │                          │
+│  │ IsWeekend            BOOLEAN        │                          │
+│  │ IsHoliday            BOOLEAN        │                          │
+│  │ HolidayName          VARCHAR(100)   │                          │
+│  │ IsBusinessDay        BOOLEAN        │                          │
+│  │ Season               VARCHAR(20)    │ Spring, Summer...        │
+│  │                                     │                          │
+│  │ ═══ RELATIVE INDICATORS ═══         │                          │
+│  │ IsToday              BOOLEAN        │                          │
+│  │ IsYesterday          BOOLEAN        │                          │
+│  │ IsCurrentWeek        BOOLEAN        │                          │
+│  │ IsCurrentMonth       BOOLEAN        │                          │
+│  │ IsCurrentQuarter     BOOLEAN        │                          │
+│  │ IsCurrentYear        BOOLEAN        │                          │
+│  └─────────────────────────────────────┘                          │
+│                                                                   │
+└───────────────────────────────────────────────────────────────────┘
+
+
+┌─────────────────────────────────────────────────┐
+│         Dim_Payment                             │
+│      (Payment Dimension)                        │
+├─────────────────────────────────────────────────┤
+│ PaymentKey (PK)      INT                        │
+│                                                 │
+│ ═══ PAYMENT INFO ═══                            │
+│ PaymentMethod        VARCHAR(50)                │ Credit Card, Debit, PayPal...
+│ PaymentType          VARCHAR(50)                │ Online, In-Store, Mobile...
+│ CardType             VARCHAR(50)                │ Visa, MasterCard, Amex...
+│ ProcessorName        VARCHAR(100)               │ Stripe, PayPal, Square...
+│                                                 │
+│ ═══ ATTRIBUTES ═══                              │
+│ IsSecure             BOOLEAN                    │
+│ ProcessingFee        DECIMAL(5,4)               │ % fee
+│ ETLBatchID           VARCHAR(50)                │
+└─────────────────────────────────────────────────┘
+
+
+┌─────────────────────────────────────────────────────────────────────────────────────┐
+│                                    RELATIONSHIPS                                    │
+├─────────────────────────────────────────────────────────────────────────────────────┤
+│                                                                                     │
+│  Fact_Orders.DateKey     ──────► Dim_Date.DateKey        (Many-to-One)             │
+│  Fact_Orders.CustomerKey ──────► Dim_Customer.CustomerKey (Many-to-One)            │
+│  Fact_Orders.ProductKey  ──────► Dim_Product.ProductKey   (Many-to-One)            │
+│  Fact_Orders.StoreKey    ──────► Dim_Store.StoreKey       (Many-to-One)            │
+│  Fact_Orders.PaymentKey  ──────► Dim_Payment.PaymentKey   (Many-to-One)            │
+│                                                                                     │
+└─────────────────────────────────────────────────────────────────────────────────────┘
+
+
+┌─────────────────────────────────────────────────────────────────────────────────────┐
+│                                 DESIGN NOTES                                       │
+├─────────────────────────────────────────────────────────────────────────────────────┤
+│                                                                                     │
+│ 1. GRAIN: One row per order line item in the fact table                            │
+│                                                                                     │
+│ 2. SCD TYPE 2: Customer and Product dimensions track historical changes            │
+│                                                                                     │
+│ 3. ADDITIVE MEASURES: Quantity, LineTotal, Discount, Tax, Profit can be summed    │
+│                                                                                     │
+│ 4. SEMI-ADDITIVE: UnitPrice (average across time, not across customers)           │
+│                                                                                     │
+│ 5. SURROGATE KEYS: Integer-based keys for better performance                       │
+│                                                                                     │
+│ 6. CONFORMED DIMENSIONS: Date, Customer, Product can be shared across data marts   │
+│                                                                                     │
+│ 7. PARTITIONING: Fact table partitioned by DateKey for performance                │
+│                                                                                     │
+│ 8. INDEXING: Comprehensive indexing strategy on all foreign keys                   │
+│                                                                                     │
+└─────────────────────────────────────────────────────────────────────────────────────┘
+```
